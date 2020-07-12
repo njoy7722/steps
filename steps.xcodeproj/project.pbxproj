@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7544141F24B9982600C4469B /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7544141E24B9982600C4469B /* Steps.swift */; };
+		7544142124B99EE500C4469B /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7544142024B99EE500C4469B /* StepCell.swift */; };
 		754CBC8124B8186900E139E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CBC8024B8186900E139E3 /* AppDelegate.swift */; };
 		754CBC8324B8186900E139E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CBC8224B8186900E139E3 /* SceneDelegate.swift */; };
 		754CBC8524B8186900E139E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CBC8424B8186900E139E3 /* ViewController.swift */; };
 		754CBC8824B8186900E139E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754CBC8624B8186900E139E3 /* Main.storyboard */; };
 		754CBC8A24B8186A00E139E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754CBC8924B8186A00E139E3 /* Assets.xcassets */; };
 		754CBC8D24B8186A00E139E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754CBC8B24B8186A00E139E3 /* LaunchScreen.storyboard */; };
+		754CBC9724B818C100E139E3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754CBC9624B818C100E139E3 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7544141E24B9982600C4469B /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
+		7544142024B99EE500C4469B /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
 		754CBC7D24B8186900E139E3 /* steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		754CBC8024B8186900E139E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		754CBC8224B8186900E139E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,8 @@
 		754CBC8924B8186A00E139E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		754CBC8C24B8186A00E139E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		754CBC8E24B8186A00E139E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754CBC9424B818C100E139E3 /* steps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = steps.entitlements; sourceTree = "<group>"; };
+		754CBC9624B818C100E139E3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754CBC9724B818C100E139E3 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,7 @@
 			children = (
 				754CBC7F24B8186900E139E3 /* steps */,
 				754CBC7E24B8186900E139E3 /* Products */,
+				754CBC9524B818C100E139E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,26 @@
 		754CBC7F24B8186900E139E3 /* steps */ = {
 			isa = PBXGroup;
 			children = (
+				754CBC9424B818C100E139E3 /* steps.entitlements */,
 				754CBC8024B8186900E139E3 /* AppDelegate.swift */,
 				754CBC8224B8186900E139E3 /* SceneDelegate.swift */,
 				754CBC8424B8186900E139E3 /* ViewController.swift */,
+				7544141E24B9982600C4469B /* Steps.swift */,
+				7544142024B99EE500C4469B /* StepCell.swift */,
 				754CBC8624B8186900E139E3 /* Main.storyboard */,
 				754CBC8924B8186A00E139E3 /* Assets.xcassets */,
 				754CBC8B24B8186A00E139E3 /* LaunchScreen.storyboard */,
 				754CBC8E24B8186A00E139E3 /* Info.plist */,
 			);
 			path = steps;
+			sourceTree = "<group>";
+		};
+		754CBC9524B818C100E139E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				754CBC9624B818C100E139E3 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				754CBC8524B8186900E139E3 /* ViewController.swift in Sources */,
+				7544141F24B9982600C4469B /* Steps.swift in Sources */,
 				754CBC8124B8186900E139E3 /* AppDelegate.swift in Sources */,
 				754CBC8324B8186900E139E3 /* SceneDelegate.swift in Sources */,
+				7544142124B99EE500C4469B /* StepCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = steps/steps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X82WRHF73Y;
 				INFOPLIST_FILE = steps/Info.plist;
@@ -302,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = steps/steps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X82WRHF73Y;
 				INFOPLIST_FILE = steps/Info.plist;
